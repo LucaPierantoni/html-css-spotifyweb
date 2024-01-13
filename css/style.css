@@ -5,6 +5,7 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
 }
 
 a {
@@ -50,6 +51,7 @@ a {
     top: 0;
     right: 0;
     left: 200px;
+    z-index: 5;
 }
 .btn-upg {
     text-align: end;
@@ -59,12 +61,16 @@ a {
 .btn-upg a {
     text-decoration: none;
     color: white;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 700;
     border: solid 1px white;
     border-radius: 20px;
-    padding: 12px 40px;
+    padding: 13px 40px;
     margin-right: 25px;
+}
+.btn-upg a:hover{
+
+    font-size: 1rem;
 }
 /* main content inside the main */
 .main-content-container {
@@ -138,7 +144,7 @@ nav .selected {
 }
 
 .cover {
-
+    position: relative;
     margin: 0 auto;
     max-width: 200px;
     /* debug */
@@ -163,6 +169,34 @@ nav .selected {
     /* debug */
     background-color: brown;
 }
+.overlay {
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay i {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+}
+.album:hover .overlay{
+
+    display: block;
+}
+#artists .cover .overlay {
+
+    border-radius: 50%;
+}
+
+/* END MAIN SECTION --------------------*/
 /* MEDIA QUERY MAIN SECTION */
 
 @media all and (max-width: 878px) and (min-width: 640px) {
@@ -177,9 +211,16 @@ nav .selected {
     .album-container {
 
         display: flex;
-        flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
+    }
+    .row {
+
+        margin-top: 10%;
+    }
+
+    main nav li {
+        padding: 5% 10px;
     }
 
 
@@ -205,3 +246,16 @@ nav .selected {
         padding: 5% 10px;
     }
 }
+/* END MEDIA QUERY MAIN SECTION */
+/* ASIDE SECTION--------------------------- */
+
+.logo {
+    max-width: 55%;
+}
+
+
+
+
+
+
+/* END ASIDE SECTION----------------------------- */
