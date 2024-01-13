@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* WRAPPER SECTION */
+
+#wrapper {
+
+    display: flex;
+    height: calc(100vh - 100px);
+    /* debug */
+    background-color: chartreuse;
+}
+
+/* aside inside the wrapper */
+
+#wrapper aside {
+
+    width: 200px;
+    height: 100%;
+    /* debug */
+    background-color: aqua;
+}
+
+/* main inside the wrapper */
+#wrapper main {
+
+    width: calc(100% - 200px);
+    height: 100%;
+    /* debug */
+    background-color: blueviolet;
+}
+
+
+/* MAIN SECTION */
+
+/* banner upgrade */
+#banner-upg {
+
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.376);
+}
+
+/* PLAYER SECTION */
+
+#player {
+
+    height: 100px;
+    /* debug */
+    background-color: brown;
+}
