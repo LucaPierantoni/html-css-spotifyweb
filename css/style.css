@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /* WRAPPER SECTION */
@@ -16,33 +20,29 @@ body {
     /* debug */
     background-color: chartreuse;
 }
-
 /* aside inside the wrapper */
 
 #wrapper aside {
-    width: 250px;
+    width: 200px;
     height: 100%;
     background-color: black;
 }
 
 /* main inside the wrapper */
 #wrapper main {
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
     height: 100%;
     background-color: rgb(20, 25, 34);
 }
-
 /* MAIN SECTION */
-
 /* banner upgrade inside the main */
-
 #banner-upg {
     height: 100px;
     background-color: rgba(0, 0, 0, 0.376);
     position: fixed;
     top: 0;
     right: 0;
-    left: 250px;
+    left: 200px;
 }
 .btn-upg {
     text-align: end;
@@ -59,40 +59,35 @@ body {
     padding: 12px 40px;
     margin-right: 25px;
 }
+/* main content inside the main */
+.main-content-container {
+    height: 100%;
+    overflow-y: auto;
+}
 /* nav inside the main */
 #wrapper main nav {
     
     margin-top: 100px;
-
     /* debug */
     /* background-color: crimson; */
 }
-
 main nav ul {
-
     padding: 25px 0;
     text-align: center;
 }
-
 main nav li {
-
     display: inline-block;
     padding: 0 10px;
 }
-
 main nav a {
-
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 700;
     color: grey;
 }
-
 main nav a:hover {
-
     color: rgb(182, 182, 182);
 }
-
 nav .selected {
     border-bottom: 3px solid rgb(145, 213, 39);
     width: 40%;
@@ -100,30 +95,62 @@ nav .selected {
 }
 
 
-/* main content inside the main */
-
-.main-content-container {
-    
-    height: 100%;
-    overflow-y: auto;
+/* albums section */
+.row > h2 {
+    font-weight: 700;
+    color: white;
+    margin: 0 1%;
 }
+.row > p {
+    margin: 1% 1%;
+}
+
 .album-container {
     display: flex;
+    margin: 2% 0;
+    /* debug */
+    /* border: solid salmon;  */
 }
 
+
 .album {
+    margin: 0.5% 1%;
+    text-align: center;
+    width: calc(100% / 6);
+    margin: 0.5% 0.5%;
     /* debug */
-    border: white solid;
+    /* border: white solid; */
+}
+.album h3 {
+    margin: 3% 0;
+    font-size: 1rem;
+}
+.sub-title, .row > p {
+    color: grey;
+    font-size: 0.8rem;
+    font-weight: 700;
 }
 
 .cover {
+
+    margin: 0 auto;
     max-width: 200px;
     /* debug */
-    border: solid;
+    /* border: solid; */
 }
 .cover img {
+
     max-width: 100%;
 }
+
+#artists .cover img {
+
+    border-radius: 50%;
+}
+
+
+
+
 /* PLAYER SECTION */
 #player {
     height: 100px;
