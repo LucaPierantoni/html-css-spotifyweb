@@ -42,33 +42,88 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    left: 200px;
+    left: 250px;
 }
-
+.btn-upg {
+    text-align: end;
+    line-height: 100px;
+    
+}
+.btn-upg a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 12px 40px;
+    margin-right: 25px;
+}
 /* nav inside the main */
 #wrapper main nav {
-
+    
     margin-top: 100px;
 
     /* debug */
     /* background-color: crimson; */
 }
 
+main nav ul {
+
+    padding: 25px 0;
+    text-align: center;
+}
+
 main nav li {
 
     display: inline-block;
+    padding: 0 10px;
 }
+
+main nav a {
+
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: grey;
+}
+
+main nav a:hover {
+
+    color: rgb(182, 182, 182);
+}
+
+nav .selected {
+    border-bottom: 3px solid rgb(145, 213, 39);
+    width: 40%;
+    margin: 2px auto;
+}
+
 
 /* main content inside the main */
 
 .main-content-container {
-
+    
     height: 100%;
     overflow-y: auto;
 }
+.album-container {
+    display: flex;
+}
 
+.album {
+    /* debug */
+    border: white solid;
+}
 
-
+.cover {
+    max-width: 200px;
+    /* debug */
+    border: solid;
+}
+.cover img {
+    max-width: 100%;
+}
 /* PLAYER SECTION */
 #player {
     height: 100px;
