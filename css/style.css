@@ -8,11 +8,9 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 /* WRAPPER SECTION */
 
 #wrapper {
-
     display: flex;
     height: calc(100vh - 100px);
     /* debug */
@@ -22,36 +20,57 @@ body {
 /* aside inside the wrapper */
 
 #wrapper aside {
-
-    width: 200px;
+    width: 250px;
     height: 100%;
-    /* debug */
-    background-color: aqua;
+    background-color: black;
 }
 
 /* main inside the wrapper */
 #wrapper main {
-
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     height: 100%;
-    /* debug */
-    background-color: blueviolet;
+    background-color: rgb(20, 25, 34);
 }
-
 
 /* MAIN SECTION */
 
-/* banner upgrade */
-#banner-upg {
+/* banner upgrade inside the main */
 
+#banner-upg {
     height: 100px;
     background-color: rgba(0, 0, 0, 0.376);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 200px;
 }
 
+/* nav inside the main */
+#wrapper main nav {
+
+    margin-top: 100px;
+
+    /* debug */
+    /* background-color: crimson; */
+}
+
+main nav li {
+
+    display: inline-block;
+}
+
+/* main content inside the main */
+
+.main-content-container {
+
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+
 /* PLAYER SECTION */
-
 #player {
-
     height: 100px;
     /* debug */
     background-color: brown;
