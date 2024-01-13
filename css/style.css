@@ -12,6 +12,13 @@ a {
     color: white;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 /* WRAPPER SECTION */
 
 #wrapper {
@@ -106,7 +113,6 @@ nav .selected {
 }
 
 .album-container {
-    display: flex;
     margin: 2% 0;
     /* debug */
     /* border: solid salmon;  */
@@ -114,9 +120,9 @@ nav .selected {
 
 
 .album {
-    margin: 0.5% 1%;
+    float: left;
     text-align: center;
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 2%);
     margin: 0.5% 0.5%;
     /* debug */
     /* border: white solid; */
@@ -156,4 +162,46 @@ nav .selected {
     height: 100px;
     /* debug */
     background-color: brown;
+}
+/* MEDIA QUERY MAIN SECTION */
+
+@media all and (max-width: 878px) and (min-width: 640px) {
+
+    .album {
+
+        float: none;
+        width: calc(100% / 4 - 2%);
+        margin: 2% 0.5%;
+    }
+
+    .album-container {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+@media all and (max-width: 639px){
+
+    .album {
+
+        width: calc(100% / 2 - 2%);
+        margin: 2% 0.5%;
+    }
+
+
+    .row {
+
+        margin-top: 10%;
+    }
+
+
+    main nav li {
+        padding: 5% 10px;
+    }
 }
