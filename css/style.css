@@ -386,6 +386,53 @@ aside {
 /* PLAYER SECTION */
 #player {
     height: 100px;
-    /* debug */
-    background-color: brown;
+    background-color: rgb(40,40,40);
+    /* background-color: crimson; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* left */
+
+.left {
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.now-playing {
+
+    display: flex;
+    align-items: center;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+}
+
+.cover-now-play {
+
+    width: 11%;
+    margin-left: 2%;
+    margin-right: 2%;
+    /* margin: 10px 0; */ /* doesn't work ?????!!! */
+}
+
+.cover-now-play img {
+
+    max-width: 100%;
+}
+
+.name-now-play {
+
+    font-size: 0.6rem;
+    color: grey;
+}
+
+
+.left i {
+
+    align-self: center;
 }
