@@ -1,3 +1,4 @@
+/* GENERAL RULES------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -7,42 +8,37 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
 }
-
 a {
     text-decoration: none;
     color: white;
 }
-
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
-
-
-/* WRAPPER SECTION */
-
+/* GENERAL RULES -------------------*/
+/* WRAPPER SECTION ---------------------*/
 #wrapper {
     display: flex;
     height: calc(100vh - 100px);
     /* debug */
-    /*background-color: chartreuse; */
+    /* background-color: chartreuse; */
 }
 /* aside inside the wrapper */
-
 #wrapper aside {
     width: 200px;
     height: 100%;
     background-color: black;
 }
-
 /* main inside the wrapper */
 #wrapper main {
     width: calc(100% - 200px);
     height: 100%;
     background-color: rgb(20, 25, 34);
 }
-/* MAIN SECTION */
+/* END WRAPPER SECTION -------------------------*/
+/* MAIN SECTION ------------------------*/
 /* banner upgrade inside the main */
 #banner-upg {
     height: 100px;
@@ -69,7 +65,7 @@ a {
     margin-right: 25px;
 }
 .btn-upg a:hover{
-
+    
     font-size: 1rem;
 }
 /* main content inside the main */
@@ -106,8 +102,6 @@ nav .selected {
     width: 40%;
     margin: 2px auto;
 }
-
-
 /* albums section */
 .row > h2 {
     font-weight: 700;
@@ -117,19 +111,17 @@ nav .selected {
 .row > p {
     margin: 1% 1%;
 }
-
 .album-container {
     margin: 2% 0;
     /* debug */
-    /* border: solid salmon;  */
+    /* border: solid salmon; */
 }
-
-
 .album {
     float: left;
     text-align: center;
     width: calc(100% / 6 - 2%);
     margin: 0.5% 0.5%;
+    
     /* debug */
     /* border: white solid; */
 }
@@ -142,7 +134,6 @@ nav .selected {
     font-size: 0.8rem;
     font-weight: 700;
 }
-
 .cover {
     position: relative;
     margin: 0 auto;
@@ -151,26 +142,12 @@ nav .selected {
     /* border: solid; */
 }
 .cover img {
-
     max-width: 100%;
 }
-
 #artists .cover img {
-
     border-radius: 50%;
 }
-
-
-
-
-/* PLAYER SECTION */
-#player {
-    height: 100px;
-    /* debug */
-    background-color: brown;
-}
 .overlay {
-
     display: none;
     position: absolute;
     top: 0;
@@ -180,7 +157,6 @@ nav .selected {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .overlay i {
-
     position: absolute;
     left: 50%;
     top: 50%;
@@ -188,72 +164,55 @@ nav .selected {
     font-size: 3.5rem;
 }
 .album:hover .overlay{
-
     display: block;
 }
 #artists .cover .overlay {
-
     border-radius: 50%;
 }
-
 /* END MAIN SECTION --------------------*/
-/* MEDIA QUERY MAIN SECTION */
-
+/* MEDIA QUERY MAIN SECTION -----------------------*/
 @media all and (max-width: 878px) and (min-width: 640px) {
-
     .album {
-
         float: none;
         width: calc(100% / 4 - 2%);
         margin: 2% 0.5%;
     }
-
     .album-container {
-
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
     }
     .row {
-
         margin-top: 10%;
     }
-
     main nav li {
         padding: 5% 10px;
     }
-
-
 }
-
-
 @media all and (max-width: 639px){
-
     .album {
-
         width: calc(100% / 2 - 2%);
         margin: 2% 0.5%;
     }
-
-
     .row {
-
         margin-top: 10%;
     }
-
-
     main nav li {
         padding: 5% 10px;
     }
 }
-/* END MEDIA QUERY MAIN SECTION */
+/* END MEDIA QUERY MAIN SECTION --------------------*/
 /* ASIDE SECTION--------------------------- */
-
 .logo {
     display: block;
     max-width: 65%;
     padding-left: 10%;
     margin: 10% 0;
+}
+
+.spotify-logo {
+
+    display: none;
 }
 
 /* navbar aside */
@@ -264,126 +223,169 @@ nav .selected {
     margin-bottom: 5%;
 }
 #aside-nav li a {
-
     display: flex;
     align-items: center;
-
     color: grey;
 }
 #aside-nav li a:hover{
-
     color: rgb(182, 182, 182);
 }
 .selected-y {
-
     border-left: 3px solid rgb(145, 213, 39);
 }
 #aside-nav li i {
-
     font-size: 1.3rem;
 }
 #aside-nav li svg {
-
     fill: grey;
     width: 25%;
     padding-left: 10%;
     padding-right: 3%;
 }
 #aside-nav li a:hover svg {
-
     fill:rgb(182, 182, 182);
 }
-
-
 /* playlist aside */
 .playlist {
-
     color: white;
     font-size: 0.6rem;
     margin: 10% 10%;
 }
 .playlist .playlist-new {
-
     font-size: 0.8rem;
     font-weight: 700;
-
     margin: 5% 0;
 }
 .playlist-new a {
-
     display: flex;
     align-items: center;
-
     color: grey;
 }
 .playlist-new a:hover {
-
     color: rgb(182, 182, 182);
 }
 .playlist .playlist-new i {
-
     font-size: 2.5rem ;
     margin-right: 5%;
 }
-
 /* list */
-.playlist-list {
-
-    /* border: solid white; */
-}
 .playlist-list ul {
-
     overflow: auto;
 }
 .playlist-list li {
-
+    
     margin: 10% 0;
 }
 .playlist-list a {
-
     color: grey;
     font-size: .8rem;
     font-weight: 700;
 }
 .playlist-list a:hover {
-
     color:rgb(182, 182, 182) ;
 }
-
 /* user */
 aside {
-
+    overflow: hidden;
     position: relative;
 }
-.user {
+.install, .user {
+    display: block;
+}
+.user-container {
     position: absolute;
     bottom: 0px;
     left: 10%;
     right: 10%;
     padding-bottom: 5%;
-    border-top: 1px grey solid;
     background-color: black;
     z-index: 4;
-
     color:white;
-
 }
-
-.user i {
-
+.user .fa-user {
     background-color: grey;
     padding: 2% 3%;
     border-radius: 50%;
+    margin-top: 10%;
+}
+.install {
+    border-bottom: 1px grey solid;
+    padding: 10% 0;
+    font-size: 0.8rem;
+    color:grey;
+}
+.install:hover {
+    color: rgb(182, 182, 182);
+}
+.install i {
+    margin-right: 5%;
+}
+/* END ASIDE SECTION----------------------------- */
+
+/* MEDIA QUERY ASIDE SECTION -----------------------*/
+
+@media all and (max-width: 522px) {
+
+    #wrapper aside {
+
+        width: 50px;
+    }
+
+    #wrapper main {
+
+        width: calc(100% - 50px);
+    }
+
+    #banner-upg {
+
+        left: 50px;
+    }
+
+
+    .playlist {
+
+        display: none;
+    }
+
+    aside span {
+
+        display: none;
+    }
+
+    .spotify-logo--text {
+
+        display: none;
+    }
+
+    .spotify-logo {
+
+        display: block;
+        width: 100%;
+        margin: 20%;
+        margin-bottom: 50%;
+    }
+
+    #aside-nav li svg {
+
+        width: 65%;
+        margin: 10% auto;
+    }
+
+    .install, .user {
+
+        text-align: center;
+        margin: 20% 0;
+    }
+
+
 }
 
 
 
-
-
-
-
-
-
-
-
-/* END ASIDE SECTION----------------------------- */
+/* END MEDIA QUERY ASIDE SECTION -----------------------*/
+/* PLAYER SECTION */
+#player {
+    height: 100px;
+    /* debug */
+    background-color: brown;
+}
