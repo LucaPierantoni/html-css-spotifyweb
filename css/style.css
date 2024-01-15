@@ -414,9 +414,9 @@ aside {
 
 .cover-now-play {
 
-    width: 11%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     /* margin: 10px 0; */ /* doesn't work ?????!!! */
 }
 
@@ -432,7 +432,20 @@ aside {
 }
 
 
-.left i {
+.like-archive {
 
     align-self: center;
+    margin-left: 30px;
+}
+
+.like-archive > a {
+
+    margin: 0 5px;
+    color: grey;
+    display: block; /* icons in vertical align */
+}
+
+.like-archive > a:hover {
+
+    color: white;
 }
