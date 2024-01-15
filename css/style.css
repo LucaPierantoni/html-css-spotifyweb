@@ -414,7 +414,7 @@ aside {
 
 .cover-now-play {
 
-    width: 50px;
+    max-width: 50px;
     margin-left: 10px;
     margin-right: 10px;
     /* margin: 10px 0; */ /* doesn't work ?????!!! */
@@ -446,6 +446,31 @@ aside {
 }
 
 .like-archive > a:hover {
+
+    color: white;
+}
+/* center */
+.buttons a {
+
+    margin: 0 5px;
+}
+
+
+
+.bar-container {
+
+
+}
+
+.bar {
+
+    height: 5px;
+    width: 50%;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+.bar-container span {
 
     color: white;
 }
